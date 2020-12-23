@@ -26,6 +26,12 @@ def lucky_number(name):
 print(lucky_number("Kay"))
 print(lucky_number("Cameron"))
 
+
+def is_positive(number):
+  if number>0: #不是is+positive(number)
+    return True #不用‘’
+    
+    
 Variable：变量
 Syntax:语法
 Expressions:表达式
@@ -35,3 +41,8 @@ Call:调用
 Colon:冒号
 str(): 函数的一种，conver number into strings.字符串
 # 注释
+logical operators: and or not :
+the not operator simply inverts the value of the statement immediately following it. 
+So if a statement evaluates to True, and we put the not operator in front of it, it would become False.
+compararison operators: > < 
+Indented:缩进
