@@ -2,4 +2,36 @@ def month_days(month,days):
   print(month +' has ' + str (days) + " days.")
 month_days ('June',30)
 month_days ('july',31)
-                
+
+def: key word =use for degine a new function
+month_days: 函数
+month,days:参数，parameters
+
+
+
+def rectangle_area(base, height):
+	rectangle_area=base*height # the area is base*height
+	print("The area is " + str(rectangle_area))
+rectangle_area(5,6)
+
+
+#第一个变量number
+#第二个变量luckey_number
+
+def lucky_number(name):
+  number = len(name) * 9
+  lucky_number = "Hello " + name + ". Your lucky number is " + str(number)
+  return number # 返回第一个变量
+	    
+print(lucky_number("Kay"))
+print(lucky_number("Cameron"))
+
+Variable：变量
+Syntax:语法
+Expressions:表达式
+Return:~PRINT 返回
+Functions: 函数
+Call:调用
+Colon:冒号
+str(): 函数的一种，conver number into strings.字符串
+# 注释
