@@ -31,18 +31,59 @@ def is_positive(number):
   if number>0: #不是is+positive(number)
     return True #不用‘’
     
+
+#if-elif-else 顺序
+ def number_group(number):
+  if number > 0:
+    return "Positive"
+  elif number<0:
+    return 'Negative'
+  else:
+    return 'Zero'
     
-Variable：变量
-Syntax:语法
-Expressions:表达式
-Return:~PRINT 返回
-Functions: 函数
+ 
+ 
+#可以直接比较，不用用len
+print("A dog" > "A mouse")
+print(9999+8888 > 100*100)
+False
+True
+
+
+def calculate_storage(filesize):
+    block_size = 4096
+    # Use floor division to calculate how many blocks are fully occupied
+    full_blocks = filesize//block_size #floor division rounds down to the nearest whole number
+    # Use the modulo operator to check whether there's any remainder
+    partial_block_remainder = filesize%block_size
+    # Depending on whether there's a remainder or not, return
+    # the total number of bytes required to allocate enough blocks
+    # to store your data.
+    if partial_block_remainder>0: #如果有余数，整除部分已经有//得出了。
+        return (full_blocks+1)*block_size  #这里用1而不是partial_block_remainder。
+    return block_size
+
+ 
 Call:调用
-Colon:冒号
+Colon:冒号Variable：变量
+compararison operators: > < 
+Expressions:表达式
+float division: /
+floor division: // floor division rounds down to the nearest whole number
+Functions: 函数
+Indented:缩进
+if-elif-else 顺序
+logical operators: and or not :
+Module: 已有的模块，前人贡献。
+module %， one operator. 两个数字之间整除的剩余部分
+not a: True if a is False, False if a is True.
+nesting：嵌套
+quotient 商
+Return:~PRINT 返回
 str(): 函数的一种，conver number into strings.字符串
 # 注释
-logical operators: and or not :
-the not operator simply inverts the value of the statement immediately following it. 
-So if a statement evaluates to True, and we put the not operator in front of it, it would become False.
-compararison operators: > < 
-Indented:缩进
+Script：脚本
+Syntax:语法
+
+
+
