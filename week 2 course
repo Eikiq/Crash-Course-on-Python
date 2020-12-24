@@ -8,7 +8,6 @@ month_days: 函数
 month,days:参数，parameters
 
 
-
 def rectangle_area(base, height):
 	rectangle_area=base*height # the area is base*height
 	print("The area is " + str(rectangle_area))
@@ -17,12 +16,10 @@ rectangle_area(5,6)
 
 #第一个变量number
 #第二个变量luckey_number
-
 def lucky_number(name):
   number = len(name) * 9
   lucky_number = "Hello " + name + ". Your lucky number is " + str(number)
   return number # 返回第一个变量
-	    
 print(lucky_number("Kay"))
 print(lucky_number("Cameron"))
 
@@ -64,24 +61,56 @@ def calculate_storage(filesize):
     return block_size
 
  
+ def longest_word(word1, word2, word3):
+	if len(word1) >= len(word2) and len(word1) >= len(word3):
+		word = word1
+	elif len(word2)>=len(word1)and len(word2)>=len(word3):  #只适用于word2大于word1/3的情况。所以比较2
+		word = word2
+	else: #1/2都结束后 剩下的就是3了
+		word = word3
+	return(word)
+ 
+ 
+ def fractional_part(numerator, denominator):
+	# Operate with numerator and denominator to
+	if denominator==0:
+	 return 0 
+	elif numerator%denominator!=0:
+# keep just the fractional part of the quotient
+	 return numerator/denominator-numerator//denominator
+	 
+	 
+ 
+ def format_name(first_name, last_name):
+	# code goes here
+	if first_name =='' and last_name=='':
+	 return('')
+	elif first_name =='':
+	 return 'Name: '+last_name
+	elif last_name =='':
+	 return 'Name: '+first_name
+	else:
+	 return 'Name: '+last_name+','+first_name
+	 
 Call:调用
 Colon:冒号Variable：变量
 compararison operators: > < 
 Expressions:表达式
-float division: /
-floor division: // floor division rounds down to the nearest whole number
+float division: /: 5/3 answer 1.666667
+floor division: // floor division rounds down to the nearest whole number 5/3 余1 商
 Functions: 函数
 Indented:缩进
 if-elif-else 顺序
 logical operators: and or not :
 Module: 已有的模块，前人贡献。
-module %， one operator. 两个数字之间整除的剩余部分
+module %， one operator. 两个数字之间整除的剩余部分 11%5 anser 1 余数
 not a: True if a is False, False if a is True.
 nesting：嵌套
 quotient 商
 Return:~PRINT 返回
 str(): 函数的一种，conver number into strings.字符串
 # 注释
+==： 等于，不是=
 Script：脚本
 Syntax:语法
 
