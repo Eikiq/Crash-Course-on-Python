@@ -1,1 +1,28 @@
-loop: 让计算机重复做
+Call:调用
+Colon:冒号Variable：变量
+compararison operators: > < 
+Expressions:表达式
+float division: /
+floor division: // floor division rounds down to the nearest whole number
+float division: /: 5/3 answer 1.666667
+floor division: // floor division rounds down to the nearest whole number 5/3 余1 商
+Functions: 函数
+Indented:缩进
+if-elif-else 顺序
+logical operators: and or not :
+loop: 让计算机重复做a task ： 3 ways: while/for/recusion：递归
+Module: 已有的模块，前人贡献。
+module %， one operator. 两个数字之间整除的剩余部分
+module %， one operator. 两个数字之间整除的剩余部分 11%5 anser 1 余数
+not a: True if a is False, False if a is True.
+nesting：嵌套
+product:乘积
+quotient 商
+Return:~PRINT 返回
+str(): 函数的一种，conver number into strings.字符串，还是数字，但是计算机不能combine show string+number.
+# 注释
+==： 等于，不是=
++=: increase the number. i.e. x+=1....0,1,2,3...x=x+1
+Script：脚本
+Syntax:语法
+while loop：While Loops instruct your computer to continuously execute your code based on the value of a condition.
