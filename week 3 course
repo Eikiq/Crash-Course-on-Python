@@ -1,0 +1,38 @@
+while loop:
+initiation x=?
+while x??:  #check x是否满足条件
+  print  #body print message under current situation
+  x???   #body move on to next operation, then loop back to while for checking.
+print()
+
+x=1
+product=1
+while x < 10:
+  product = product * x
+  x+=1
+  
+def attempts(n):
+  x=1
+  while x <=n:
+    print('attempt' + str(x))
+    x+=1
+  print('done')
+attempt(5)
+
+#answer
+attempt1
+attempt2
+attempt3
+attempt4
+attempt5
+done
+
+
+def count_down(start_number):
+  current=start_number
+  while (current > 0):
+    print(current)
+    current -= 1
+  print("Zero!")
+
+count_down(3)
