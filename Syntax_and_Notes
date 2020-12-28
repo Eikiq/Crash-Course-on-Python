@@ -3,6 +3,7 @@ Call:调用
 Colon:冒号Variable：变量
 compararison operators: > < 
 Expressions:表达式
+factoria: defined as the product of an integer and all the integers below it
 float division: /
 floor division: // floor division rounds down to the nearest whole number
 float division: /: 5/3 answer 1.666667
@@ -10,14 +11,20 @@ floor division: // floor division rounds down to the nearest whole number 5/3 �
 Functions: 函数
 Indented:缩进
 if-elif-else 顺序
+iterate: for loop 遍历,迭代
 logical operators: and or not :
 loop: 让计算机重复做a task ： 3 ways: while/for/recusion：递归
+for loop:allow you to iterate over a sequence of values
 Module: 已有的模块，前人贡献。
 module %， one operator. 两个数字之间整除的剩余部分 11%5 anser 1 余数
 not a: True if a is False, False if a is True.
 nesting：嵌套
 product:乘积
 quotient 商
+range: function （1，10）括号里两个参数 不包括10 f it receives one parameter, it will create a sequence one by one from zero until one less than the parameter received.
+   If it receives two parameters, it will create a sequence one by one from the first parameter until one less than the second parameter. 
+   Finally, if it receives three parameters, it will create a sequence starting from the first number and moving towards the second number. 
+   But this time, the jumps between the numbers will be the size of the third number。
 Return:~PRINT 返回
 str(): 函数的一种，conver number into strings.字符串，还是数字，但是计算机不能combine show string+number.
 # 注释
