@@ -70,6 +70,20 @@ multiplication_table(3)
 multiplication_table(5) 
 # Should print: 5x1=5 5x2=10 5x3=15 5x4=20 5x5=25
 
+#pruduct=1 #定义一个函数
+for n in range(1,10): #给n一个range
+  product=product*n #新的变量值
+print(product)
+
+
+def factorial(n):
+    result = 1
+    for i in range(1,n+1):
+        result*=i  #*=5 #x *= 5	x = x * 5
+    return result
+
+print(factorial(4)) # should return 24
+print(factorial(5)) # should return 120
 multiplication_table(8)	
 # Should print: 8x1=8 8x2=16 8x3=24
 
@@ -100,3 +114,17 @@ print(sum_divisors(36)) # Should sum of 1+2+3+4+6+9+12+18
 # 55
 print(sum_divisors(102)) # Should be sum of 2+3+6+17+34+51
 # 114
+
+
+
+#for loop：allow you to iterate over a sequence of values
+def square(n):
+    return n*n
+
+def sum_squares(x):
+    sum = 0
+    for n in range(x):
+        sum +=n*n
+    return sum
+
+print(sum_squares(10)) # Should be 285
