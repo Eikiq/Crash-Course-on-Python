@@ -4,10 +4,9 @@ Colon:冒号Variable：变量
 compararison operators: > < 
 Expressions:表达式
 factoria: defined as the product of an integer and all the integers below it
-float division: /
 floor division: // floor division rounds down to the nearest whole number
 float division: /: 5/3 answer 1.666667
-floor division: // floor division rounds down to the nearest whole number 5/3 余1 商
+floor division: // floor division rounds down to the nearest whole number 5/3 余2 商
 Functions: 函数
 Indented:缩进
 if-elif-else 顺序
@@ -30,6 +29,7 @@ str(): 函数的一种，conver number into strings.字符串，还是数字，�
 # 注释
 ==： 等于，不是=
 +=: increase the number. i.e. x+=1....0,1,2,3...x=x+1
+!= #not equal to
 Script：脚本
 Syntax:语法
 while loop：While Loops instruct your computer to continuously execute your code based on the value of a condition.
