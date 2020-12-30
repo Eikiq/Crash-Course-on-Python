@@ -1,0 +1,106 @@
+#Lists：列表 []
+append: i.e fruits.append('kiwi')
+element: each element in a list. the length of each element doesn't matter.
+enumrrate: one of the functions,枚举
+insert: i.e fruit.insert(0,'kiwi')#加在第一个element
+index: 索引位置 in a list. start with 0,1,2,  i.e print(x[0])； list[0]
+list comprenhensions: let us create new list based on sequences or ranges. 
+   # [ x*2 for x in range(1,11) ] is a simple list comprehension. 
+   This would iterate over the range 1 to 10, and multiply each element in the range by 2. This would result in a list of the multiples of 2, from 2 to 20.
+   #[ x for x in range(1,101) if x % 10 == 0 ]
+pop:fruit.pop(3) pop接受index
+remove: fruit.remove('melon')
+#replace: fruit[2]='strawberry'
+Tuples: 元组： another sequence type but can't be changed,the position of the elements inside the tuple have meaning,like fullname('james','M'，'potter')
+
+Q1: 
+关于列表的长度,用 len[], 
+x=['Now','we','are','cooking!']
+x[1:3]
+>>> ['we','are']
+
+
+Q2: 
+split怎么用
+Using the "split" string method from the preceding lesson, 
+complete the get_word function to return the {n}th word from a passed sentence. 
+For example, get_word("This is a lesson about lists", 4) should return "lesson", which is the 4th word in this sentence. Hint: remember that list indexes start at 0, not 1. 
+
+def get_word(sentence, n):
+	# Only proceed if n is positive 
+	if n > 0:
+		words = sentence.split() #words是一个新的变量，承载split setence这个string之后的每一个substring.
+		# Only proceed if n is not more than the number of words 
+		if n <= len(words):
+			return(words[n-1])
+	return("")
+
+print(get_word("This is a lesson about lists", 4)) # Should print: lesson
+print(get_word("This is a lesson about lists", -4)) # Nothing
+print(get_word("Now we are cooking!", 1)) # Should print: Now
+print(get_word("Now we are cooking!", 5)) # Nothing
+
+Here is your output:
+lesson
+
+Now
+
+
+Q3: 
+Tuples元组
+Let's use tuples to store information about a file: its name, its type and its size in bytes. 
+Fill in the gaps in this code to return the size in kilobytes (a kilobyte is 1024 bytes) up to 2 decimal places. 
+
+def file_size(file_info):
+	name, type,size= file_info
+	return("{:.2f}".format(size / 1024))
+
+print(file_size(('Class Assignment', 'docx', 17875))) # Should print 17.46
+print(file_size(('Notes', 'txt', 496))) # Should print 0.48
+print(file_size(('Program', 'py', 1239))) # Should print 1.21
+
+Here is your output:
+17.46
+0.48
+1.21
+
+Q4: 
+enumerate
+winners = ['Ashley','Dylan','Reese']
+for index,person in enumerate(winners)
+  print('{}] - {}'.format(index+1,person))
+1 - Ashley
+2 - Dylan
+3 - Reese
+
+Q5: 
+enumerate example
+def skip_elements(elements):
+	# code goes here
+	new_elements= []
+	for i,element in enumerate(elements): #python会直接iterate element+enumerate
+		if (i%2)== 0:
+			new_elements.append(element)
+	return new_elements
+
+print(skip_elements(["a", "b", "c", "d", "e", "f", "g"])) # Should be ['a', 'c', 'e', 'g']
+print(skip_elements(['Orange', 'Pineapple', 'Strawberry', 'Kiwi', 'Peach'])) # Should be ['Orange', 'Strawberry', 'Peach']
+
+Here is your output:
+['a', 'c', 'e', 'g']
+['Orange', 'Strawberry', 'Peach']
+
+Q6:
+list comprenhensions:
+The odd_numbers function returns a list of odd numbers between 1 and n, inclusively. 
+Fill in the blanks in the function, using list comprehension. Hint: remember that list and range counters start at 0 and end at the limit minus 1.
+
+def odd_numbers(n):
+	return [x for x in range(1,n+1) if x%2!=0]
+
+print(odd_numbers(5))  # Should print [1, 3, 5]
+print(odd_numbers(10)) # Should print [1, 3, 5, 7, 9]
+print(odd_numbers(11)) # Should print [1, 3, 5, 7, 9, 11]
+print(odd_numbers(1))  # Should print [1]
+print(odd_numbers(-1)) # Should print []
+
