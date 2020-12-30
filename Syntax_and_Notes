@@ -1,5 +1,6 @@
 break: keyword
 Call:调用
+charactor : 字符 在strings里的
 Colon:冒号Variable：变量
 compararison operators: > < 
 Expressions:表达式
@@ -12,8 +13,10 @@ Indented:缩进
 if-elif-else 顺序
 iterate: for loop 遍历,迭代
 logical operators: and or not :
+len: a function. tells u the length of the string.
 loop: 让计算机重复做a task ： 3 ways: while/for/recusion：递归
 for loop:allow you to iterate over a sequence of values
+Method: A function associated with a specific class. 与特定类关联的函数。 index是一个method.
 Module: 已有的模块，前人贡献。
 module %， one operator. 两个数字之间整除的剩余部分 11%5 anser 1 余数
 not a: True if a is False, False if a is True.
@@ -26,10 +29,12 @@ range: function （1，10）括号里两个参数 不包括10 f it receives one 
    But this time, the jumps between the numbers will be the size of the third number。
 Return:~PRINT 返回
 str(): 函数的一种，conver number into strings.字符串，还是数字，但是计算机不能combine show string+number.
+Strip: to get off any whitespace aside the strings.
 # 注释
 ==： 等于，不是=
 +=: increase the number. i.e. x+=1....0,1,2,3...x=x+1
 != #not equal to
 Script：脚本
 Syntax:语法
+string: a data type in Python that's used to represent a piece of text(文本）
 while loop：While Loops instruct your computer to continuously execute your code based on the value of a condition.
