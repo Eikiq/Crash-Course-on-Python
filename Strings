@@ -27,14 +27,16 @@ pets = 'cats & dogs'
 pets.index('t')
 2
 
-Q2: Using the index method, find out the position of "x" in "supercalifragilisticexpialidocious".
+Q2: 
+Using the index method, find out the position of "x" in "supercalifragilisticexpialidocious".
 word = "supercalifragilisticexpialidocious" #变量word
 print(word.index('x')) 
 21
 #The index method is a very useful way of working
 with strings, and not having to do the hard work manually.
 
-#Q3: 用到先initial,再拆分，再Upper
+#Q3: 
+用到先initial,再拆分，再Upper
 #here we will define a function "initials"
 #which returns the initials of the words 
 #contained in the phrase received
@@ -58,7 +60,8 @@ print(initials("Universal Serial Bus")) # Should be: USB
 print(initials("local area network")) # Should be: LAN
 print(initials("Operating system")) # Should be: OS
 
-#Q4: Modify the student_grade function using the format method, so that it returns the phrase "X received Y% on the exam". 
+#Q4: 
+modify the student_grade function using the format method, so that it returns the phrase "X received Y% on the exam". 
 For example, student_grade("Reed", 80) should return "Reed received 80% on the exam".
 
 def student_grade(name, grade):
@@ -90,6 +93,7 @@ print(convert_distance(11)) # Should be: 11 miles equals 17.6 km
 5.5 miles equals 8.8 km
 11 miles equals 17.6 km
 
+
 Q6:
 Fill in the gaps in the nametag function so that it uses the format method to return first_name and the first initial of last_name followed by a period. 
 For example, nametag("Jane", "Smith") should return "Jane S."
@@ -108,7 +112,7 @@ Jane S.
 Francesco R.
 Jean-Luc G.
 
-Q7
+Q7:
 def replace_ending(sentence, old, new):
 	# Check if the old string is at the end of the sentence 
 	if sentence.endswith(old):
