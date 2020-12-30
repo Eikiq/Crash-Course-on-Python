@@ -1,3 +1,4 @@
+boolean: 布尔值 true/false. 可以用 ''in''来check result. true/false
 break: keyword
 Call:调用
 charactor : 字符 在strings里的
