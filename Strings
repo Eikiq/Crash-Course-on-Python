@@ -1,6 +1,133 @@
+index:索引 string里的charactor 个体。位置。
+expression:表达式 比如只要小数点后2位。 {：.2f} 以：开头，我们需要一个2位数的float number.
+lower()
+substring:
+strip: remove surrounding whitespace;lstrip/rstrip
+String index: 字符串索引
+Slice: A slice is the portion of a string that can contain more than one character, also sometimes called a substring.
+Upper(): 'this is a string'.upper() = 'THIS IS A STRING'
+split: 把strings里的每个substring 拆分
+
+#You can do this by creating a range, using a colon as a separator between the start and end of the range, like [2:5]
+#[:5] would give us all characters from the start to the fourth character in the string. 
+#[5:] to get the characters from the fourth character to the end of the string.
+{}: curly bracket:大括号符,可以作为placeholder指代参数。见Q4下面。
+
+
+Q0:
 def double_word(word):
     return (word*2)+str(len(2*word))  #string可以被乘
 
 print(double_word("hello")) # Should return hellohello10
 print(double_word("abc"))   # Should return abcabc6
 print(double_word(""))      # Should return 0
+
+Q1:
+pets = 'cats & dogs'
+pets.index('t')
+2
+
+Q2: Using the index method, find out the position of "x" in "supercalifragilisticexpialidocious".
+word = "supercalifragilisticexpialidocious" #变量word
+print(word.index('x')) 
+21
+#The index method is a very useful way of working
+with strings, and not having to do the hard work manually.
+
+#Q3: 用到先initial,再拆分，再Upper
+#here we will define a function "initials"
+#which returns the initials of the words 
+#contained in the phrase received
+def initials(phrase): 
+    # Now we will split the phrase into words
+    words = phrase.split()
+    #Now we will define a empty variable named "result"
+    #which will be used to store the result
+    result = ""
+    # Now we will iterate over every word present
+    #in that phrase one at at time
+    for word in words:
+       # Now we will store the first letter of each
+       # word into the result variable 
+        result +=(word[0])
+    return result.upper() 
+    # with the above line we are ensuring 
+    #that your result is in upper-case
+
+print(initials("Universal Serial Bus")) # Should be: USB
+print(initials("local area network")) # Should be: LAN
+print(initials("Operating system")) # Should be: OS
+
+#Q4: Modify the student_grade function using the format method, so that it returns the phrase "X received Y% on the exam". 
+For example, student_grade("Reed", 80) should return "Reed received 80% on the exam".
+
+def student_grade(name, grade):
+	return ("{} received {}% on the exam".format(name, grade))
+
+print(student_grade("Reed", 80))
+print(student_grade("Paige", 92))
+print(student_grade("Jesse", 85))
+
+Here is your output:
+Reed received 80% on the exam
+Paige received 92% on the exam
+Jesse received 85% on the exam
+
+#Q5:
+Using the format method, fill in the gaps in the convert_distance function so that it returns the phrase "X miles equals Y km", 
+with Y having only 1 decimal place. For example, convert_distance(12) should return "12 miles equals 19.2 km".
+
+def convert_distance(miles):
+	km = miles * 1.6 
+	result = "{} miles equals {:.1f} km".format(miles,1.6*miles)
+	return result
+
+print(convert_distance(12)) # Should be: 12 miles equals 19.2 km
+print(convert_distance(5.5)) # Should be: 5.5 miles equals 8.8 km
+print(convert_distance(11)) # Should be: 11 miles equals 17.6 km
+
+12 miles equals 19.2 km
+5.5 miles equals 8.8 km
+11 miles equals 17.6 km
+
+Q6:
+Fill in the gaps in the nametag function so that it uses the format method to return first_name and the first initial of last_name followed by a period. 
+For example, nametag("Jane", "Smith") should return "Jane S."
+
+def nametag(first_name, last_name):
+	return("{} {}.".format(first_name,last_name[0])) #string[i] Accesses the character at index i of the string, starting at zero
+
+print(nametag("Jane", "Smith")) 
+# Should display "Jane S." 
+print(nametag("Francesco", "Rinaldi")) 
+# Should display "Francesco R." 
+print(nametag("Jean-Luc", "Grand-Pierre")) 
+# Should display "Jean-Luc G." 
+
+Jane S.
+Francesco R.
+Jean-Luc G.
+
+Q7
+def replace_ending(sentence, old, new):
+	# Check if the old string is at the end of the sentence 
+	if sentence.endswith(old):
+		# Using i as the slicing index, combine the part
+		# of the sentence up to the matched string at the 
+		# end with the new string
+		sentence=sentence.split()
+		sentence[-1]=new
+		new_sentence =" ".join(sentence)
+		return new_sentence
+
+	# Return the original sentence if there is no match 
+	return sentence
+	
+print(replace_ending("It's raining cats and cats", "cats", "dogs")) 
+# Should display "It's raining cats and dogs"
+print(replace_ending("She sells seashells by the seashore", "seashells", "donuts")) 
+# Should display "She sells seashells by the seashore"
+print(replace_ending("The weather is nice in May", "may", "april")) 
+# Should display "The weather is nice in May"
+print(replace_ending("The weather is nice in May", "May", "April")) 
+# Should display "The weather is nice in April"
