@@ -1,4 +1,5 @@
 #Lists：列表 []
+
 append: i.e fruits.append('kiwi')
 element: each element in a list. the length of each element doesn't matter.
 enumrrate: one of the functions,枚举
@@ -11,6 +12,8 @@ list comprenhensions: let us create new list based on sequences or ranges.
 pop:fruit.pop(3) pop接受index
 remove: fruit.remove('melon')
 #replace: fruit[2]='strawberry'
+split: 拆分。 variable.split()
+
 Tuples: 元组： another sequence type but can't be changed,the position of the elements inside the tuple have meaning,like fullname('james','M'，'potter')
 
 Q1: 
@@ -20,8 +23,27 @@ x[1:3]
 >>> ['we','are']
 
 
-Q2: 
+Q2a Q2b: 
 split怎么用
+Let's create a function that turns text into pig latin: 
+a simple text transformation that modifies each word moving the first character to the end and appending "ay" to the end. 
+For example, python ends up as ythonpay.
+
+def pig_latin(text):
+  say = ""
+  # Separate the text into words
+  words = text.split()  #xxxx.split() or xxxxx.split[]
+  for word in words:
+    # Create the pig latin word and add it to the list
+    result = word[1:] + word[0] + 'ay' + ' '
+    say += result
+    # Turn the list back into a phrase
+  return say
+		
+print(pig_latin("hello how are you")) # Should be "ellohay owhay reaay ouyay"
+print(pig_latin("programming in python is fun")) # Should be "rogrammingpay niay ythonpay siay unfay"
+
+q2b:
 Using the "split" string method from the preceding lesson, 
 complete the get_word function to return the {n}th word from a passed sentence. 
 For example, get_word("This is a lesson about lists", 4) should return "lesson", which is the 4th word in this sentence. Hint: remember that list indexes start at 0, not 1. 
@@ -47,7 +69,7 @@ Now
 
 
 Q3: 
-Tuples元组
+Tuples元组,immutable.不变的
 Let's use tuples to store information about a file: its name, its type and its size in bytes. 
 Fill in the gaps in this code to return the size in kilobytes (a kilobyte is 1024 bytes) up to 2 decimal places. 
 
