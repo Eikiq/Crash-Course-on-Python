@@ -1,0 +1,43 @@
+another data type,mutable=changeble similar to list.
+{element}
+{key:value} #use the key to access the corresponding value
+animals = { "bears":10, "lions":1, "tigers":2 }
+#a dictionary key can be a different data type, like a string, integer, float, or even tuples. can't use list as list is immutable.
+#a dictionary value can be anything data type, including list)
+新增： file_count['html'] = 9
+print(file_counts)
+
+del: del file_counts['html(key)']
+in keyword: #'html' in file_counts
+for iterating: will iterating the #keys in the dictionary
+
+item: 
+for ext,amount in file_counts.items():
+  print{ 'there are {} files with the .{} extension'.format(amount,ext))
+  
+ 只想要key:   file_counts.keys()
+ 只想要value: file_counts.values()
+ Q0:
+wardrobe = {"shirt":["red","blue","white"], "jeans":["blue","black"]}
+for key, value in wardrobe.items( ):
+	for valuesub in value:
+		print("{} {}".format(valuesub,key))
+
+Here is your output:
+red shirt
+blue shirt
+white shirt
+blue jeans
+black jeans
+
+ Q1: #good for counting and analizing frequency
+  def count_letters(text):
+    result={}
+    for letter in text:
+        if letter not in result:
+            result[letter] = 0
+        result[letter] +=1
+    return result
+count_letters('aaaaa')
+{'a':5}
+
